@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "ㅁ",
+      "body": "ㅁ"
+    },
+    {
+      "id": 2,
+      "title": "CSS",
+      "body": "css is ..."
+    },
+    {
+      "title": "react",
+      "body": "react is ...",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
