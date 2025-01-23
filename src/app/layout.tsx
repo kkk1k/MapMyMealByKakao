@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
-import Control from "./Control";
 
 export const metadata: Metadata = {
   title: "Web",
@@ -13,25 +11,9 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const res = await fetch("http://localhost:9999/topics");
-  const result = await res.json();
-
   return (
     <html>
-      <body>
-        <h1>
-          <Link href="/">Web</Link>
-        </h1>
-        <ol>
-          {result.map((item: { id: number; title: string }) => (
-            <li key={item.id}>
-              <Link href={`/read/${item.id}`}>{item.title}</Link>
-            </li>
-          ))}
-        </ol>
-        {children}
-        <Control />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
