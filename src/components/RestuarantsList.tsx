@@ -23,7 +23,6 @@ const RestaurantList = ({ restaurants }: RestaurantListProps) => {
               <a
                 href={restaurant.place_url}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 {restaurant.place_name}
               </a>{" "}
